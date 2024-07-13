@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Bts"
         tools:targetApi="31">
         <activity
+            android:name=".ImageInsideActivity"
+            android:exported="false" />
+        <activity
             android:name=".Bts7Activity"
             android:exported="false" />
         <activity

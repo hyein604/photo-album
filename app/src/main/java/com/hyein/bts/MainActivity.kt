@@ -19,44 +19,52 @@ class MainActivity : AppCompatActivity() {
         image1.setOnClickListener{
             // 토스트 메세지 띄우기
             // Toast.makeText(this, "1번 클릭 완료", Toast.LENGTH_LONG).show()
+
             // 2. 화면이 클릭되면 다음 화면으로 넘어가서 사진을 크게 보여준다.
-            val intent = Intent(this, Bts1Activity::class.java)
+            val intent = Intent(this, ImageInsideActivity::class.java)
+            intent.putExtra("data","1") // data라는 이름의 변수에 1이라는 값 담아서 intent로 보내기
             startActivity(intent)
         }
 
         val image2 = findViewById<ImageView>(R.id.bts_image_2)
         image2.setOnClickListener{
-            var intent = Intent(this, Bts2Activity::class.java)
+            var intent = Intent(this, ImageInsideActivity::class.java)
+            intent.putExtra("data","2")
             startActivity(intent)
         }
 
         var image3 = findViewById<ImageView>(R.id.bts_image_3)
         image3.setOnClickListener{
-            var intent = Intent(this, Bts3Activity::class.java)
+            var intent = Intent(this, ImageInsideActivity::class.java)
+            intent.putExtra("data","3")
             startActivity(intent)
         }
 
         var image4 = findViewById<ImageView>(R.id.bts_image_4)
         image4.setOnClickListener{
-            var intent = Intent(this, Bts4Activity::class.java)
+            var intent = Intent(this, ImageInsideActivity::class.java)
+            intent.putExtra("data",'4')
             startActivity(intent)
         }
 
         var image5 = findViewById<ImageView>(R.id.bts_image_5)
         image5.setOnClickListener{
-            var intent = Intent(this, Bts5Activity::class.java)
+            var intent = Intent(this, ImageInsideActivity::class.java)
+            intent.putExtra("data","5")
             startActivity(intent)
         }
 
         var image6 = findViewById<ImageView>(R.id.bts_image_6)
         image6.setOnClickListener{
-            var intent = Intent(this, Bts6Activity::class.java)
+            var intent = Intent(this, ImageInsideActivity::class.java)
+            intent.putExtra("data","6")
             startActivity(intent)
         }
 
         var image7 = findViewById<ImageView>(R.id.bts_image_7)
         image7.setOnClickListener{
-            var intent = Intent(this, Bts7Activity::class.java)
+            var intent = Intent(this, ImageInsideActivity::class.java)
+            intent.putExtra("data","7")
             startActivity(intent)
         }
 
